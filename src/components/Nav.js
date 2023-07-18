@@ -1,7 +1,7 @@
 
 function Nav() {
     return (
-        <div className="nav-bar">
+        <nav>
             <ul>
                 <li>Women's</li>
                 <li>Men's</li>
@@ -10,7 +10,7 @@ function Nav() {
                 <li>AdWatch</li>
                 <li>About</li>
             </ul>
-        </div>
+        </nav>
     )
 }
 
