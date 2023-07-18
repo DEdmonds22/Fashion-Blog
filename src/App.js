@@ -21,6 +21,7 @@ function App() {
       <Header />
       <Nav />
       {article}
+      <Footer />
     </div>
   )
 }
