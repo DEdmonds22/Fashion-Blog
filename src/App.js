@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import articles from "./data";
+import Header from "./components/Header"
+import Nav from "./components/Nav";
+import Article from "./components/Article";
+import Footer from "./components/Footer";
 
 function App() {
+  const article = articles.map((element, index) => {
+    return (
+      <Article 
+      key={index} 
+      date={element.date} 
+      title={element.title} 
+      img={element.img} 
+      text={element.text} />
+    )
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {article}
     </div>
-  );
+  )
 }
 
 export default App;
+
+/*
+data has 2 objects in 1 array: date, title, img, and text
+*/
