@@ -19,6 +19,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Nav />
       {article}
     </div>
   )
