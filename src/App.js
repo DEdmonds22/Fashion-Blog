@@ -1,3 +1,4 @@
+import "./App.css"
 import articles from "./data";
 import Header from "./components/Header"
 import Nav from "./components/Nav";
